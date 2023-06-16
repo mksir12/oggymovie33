@@ -23,7 +23,7 @@ async def clone(bot: pbot, msg: Message):
         pbot = Client(":memory:", api_id="23648338",api_hash="9b23c1dda0eaf6c48758d4c1e6ae9fe0",bot_token=phone, plugins={"root": "handlers"})
         await pbot.start()
         idle()
-        user = await client.get_me()
+        user = await pbot.get_me()
         await msg.reply(f"Your Client Has Been Successfully Started As @{user.username}! ✅ \n\nThanks for Cloning.")
     except Exception as e:
         await msg.reply(f"ERROR: {str(e)}\nPress /start to Start again.")
