@@ -34,6 +34,9 @@ async def clone(bot: pbot, msg: Message):
 help = """
 clone this bot
 
- â /clone *:* send me bot token from bot father"""
+ â /clone *:* send me bot token from bot father
+ 
+ https://graph.org/file/ce5be71d867ce7f8b771e.mp4
+ """
 
 mod_name = "Cʟᴏɴᴇ"
