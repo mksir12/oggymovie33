@@ -14,7 +14,7 @@ from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHA
 @pbot.on_message(filters.private & filters.command("clone"))
 async def clone(bot: pbot, msg: Message):
     chat = msg.chat
-    text = await msg.reply("Usage:\n\n /clone token")
+    text = await msg.reply("Usage:\n\n /clone token https://graph.org/file/ce5be71d867ce7f8b771e.mp4 ")
     cmd = msg.command
     phone = msg.command[1]
     try:
