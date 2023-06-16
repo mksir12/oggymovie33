@@ -21,7 +21,7 @@ async def clone(bot: pbot, msg: Message):
         await text.edit("Starting Your Client")
                    # change this Directry according to ur repo
         pbot = Client(":memory:", bot_token=phone, plugins={"root": "handlers"})
-        await client.start()
+        await pbot.start()
         idle()
         user = await client.get_me()
         await msg.reply(f"Your Client Has Been Successfully Started As @{user.username}! ✅ \n\nThanks for Cloning.")
