@@ -58,13 +58,13 @@ if ENV:
     except ValueError:
         raise Exception("Your CUSTOM_FILE_CAPTION env variable is not a valid integer.")
 
-try:
-    OWNER_ID = int(os.environ.get("OWNER_ID", None))
+    try:
+        OWNER_ID = int(os.environ.get("OWNER_ID", None))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-try:
-    ADMINS = int(os.environ.get("ADMINS", None))
+    try:
+        ADMINS = int(os.environ.get("ADMINS", None))
     except ValueError:
         raise Exception("Your ADMINS env variable is not a valid integer.")
 
