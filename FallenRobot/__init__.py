@@ -58,8 +58,8 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-try:
-    ADMINS = int(os.environ.get("ADMINS", None))
+    try:
+        ADMINS = int(os.environ.get("ADMINS", None))
     except ValueError:
         raise Exception("Your ADMINS env variable is not a valid integer.")
 
