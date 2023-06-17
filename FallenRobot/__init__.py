@@ -54,11 +54,6 @@ if ENV:
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
-        CUSTOM_FILE_CAPTION = int(os.environ.get("CUSTOM_FILE_CAPTION", None))
-    except ValueError:
-        raise Exception("Your CUSTOM_FILE_CAPTION env variable is not a valid integer.")
-
-    try:
         OWNER_ID = int(os.environ.get("OWNER_ID", None))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
