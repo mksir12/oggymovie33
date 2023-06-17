@@ -144,6 +144,7 @@ else:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
 
+CUSTOM_FILE_CAPTION.add(CUSTOM_FILE_CAPTION)      
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
 DEV_USERS.add(1356469075)
