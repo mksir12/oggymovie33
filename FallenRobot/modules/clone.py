@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors.exceptions.bad_request_400 import AccessTokenExpired, AccessTokenInvalid
 
-from FallenRobot import API_ID, API_HASH, ADMINS, CUSTOM_FILE_CAPTION
+from FallenRobot import API_ID, API_HASH, ADMINS 
 from FallenRobot import DATABASE_URI as MONGO_URL
 
 mongo_client = MongoClient(MONGO_URL)
