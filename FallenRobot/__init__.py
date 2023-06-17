@@ -51,6 +51,7 @@ if ENV:
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
+    CUSTOM_FILE_CAPTION = os.eviron.get("CUSTOM_FILE_CAPTION", None)
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
@@ -111,6 +112,7 @@ else:
     TOKEN = Config.TOKEN
     TIME_API_KEY = Config.TIME_API_KEY
     WORKERS = Config.WORKERS
+    CUSTOM_FILE_CAPTION = config.CUSTOM_FILE_CAPTION
 
     try:
         OWNER_ID = int(Config.OWNER_ID)
