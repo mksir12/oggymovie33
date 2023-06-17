@@ -42,7 +42,7 @@ if ENV:
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
     LOAD = os.environ.get("LOAD", "").split()
     MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
-    ADMINS = os.eviron.get("ADMINS", "None")
+    
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
         "START_IMG", "https://telegra.ph/file/40eb1ed850cdea274693e.jpg"
@@ -59,6 +59,14 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
+            try:
+
+        ADMINS = int(os.environ.get("ADMINS", None))
+
+    except ValueError:
+
+        raise Exception("Your ADMINS env variable is not a valid integer.")
+        
     try:
         BL_CHATS = set(int(x) for x in os.environ.get("BL_CHATS", "").split())
     except ValueError:
