@@ -5,8 +5,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors.exceptions.bad_request_400 import AccessTokenExpired, AccessTokenInvalid
 
-from info import API_ID, API_HASH, ADMINS, CUSTOM_FILE_CAPTION
-from info import DATABASE_URI as MONGO_URL
+from FallenRobot import API_ID, API_HASH, ADMINS, CUSTOM_FILE_CAPTION
+from FallenRobot import DATABASE_URI as MONGO_URL
 
 mongo_client = MongoClient(MONGO_URL)
 mongo_db = mongo_client["cloned_bots"]
