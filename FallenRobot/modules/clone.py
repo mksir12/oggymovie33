@@ -4,10 +4,10 @@ import asyncio
 import time
 from pyrogram import pbot
 from pyrogram.types import *
-
+from pyrogram import Client as pbot
 os.system("apt install git curl python3-pip ffmpeg -y")
 
-from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT, pbot
+from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHAT
 
 ##Copy from here 
 
