@@ -2,7 +2,7 @@ import os
 import re
 import asyncio
 import time
-from pyrogram import *
+from pyrogram import pbot
 from pyrogram.types import *
 
 os.system("apt install git curl python3-pip ffmpeg -y")
