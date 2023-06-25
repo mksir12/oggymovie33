@@ -43,7 +43,8 @@ async def style_buttons(c, m, cb=False):
             InlineKeyboardButton("H̆̈ă̈p̆̈p̆̈y̆̈", callback_data="style+happy"),
             InlineKeyboardButton("S̑̈ȃ̈d̑̈", callback_data="style+sad"),
         ],
-        [InlineKeyboardButton("ɴᴇxᴛ ➻", callback_data="nxt")],
+        [InlineKeyboardButton("ɴᴇxᴛ ➻", callback_data="nxt"),
+        InlineKeyboardButton("ɴᴇxᴛ ❗️ ➻", callback_data="start")]
     ]
     if not cb:
         await m.reply_text(
